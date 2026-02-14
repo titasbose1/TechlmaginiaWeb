@@ -17,6 +17,8 @@ import { ProductsComponent } from './pages/products/products.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ImageSliderComponent } from "./image-slider/image-slider.component";
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { OurPoliciesComponent } from './pages/our-policies/our-policies.component';
+import { RefundCancellationComponent } from './pages/refund-cancellation/refund-cancellation.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ListEnquiryComponent } from './pages/list-enquiry/list-enquiry.component';
@@ -36,6 +38,8 @@ import {  ReactiveFormsModule } from '@angular/forms';
         ProductsComponent,
         AboutComponent,
         ContactUsComponent,
+        OurPoliciesComponent,
+        RefundCancellationComponent,
         ListEnquiryComponent,
         SignInDialogComponent,
         ErrorDailogComponent,

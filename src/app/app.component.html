@@ -2,7 +2,7 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar style="background: white;" >
-      <img src="../assets/logoNew.png" style="height: 50px;">
+      <img src="../assets/logoNew.png" style="width: 100%;">
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item [routerLink]="['/']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route"
@@ -16,7 +16,8 @@
       <a mat-list-item (click)="openDialog()" routerLinkActive="active-route">Sign In</a>
     </mat-nav-list>
     <mat-toolbar class="footer">
-      &copy; {{currentYear}} Techlmaginia
+
+        
     </mat-toolbar>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -33,5 +34,15 @@
 
       <router-outlet style="margin-left: 5px;"></router-outlet>
     </div>
+    <mat-toolbar class="site-footer small-links">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a routerLink="/our-policies">Our Policies</a>
+          <a routerLink="/refund-cancellation">Refund & Cancellation Policies</a>
+          <a routerLink="/contactUs">Contact Us</a>
+        </div>
+        <div class="copyright">© Techlmaginia Softwares Private Limited</div>
+      </div>
+    </mat-toolbar>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -8,6 +8,17 @@
   color: #ffffff;
 }
 
+/* make sidenav a column so footer can sit after nav-list */
+.sidenav{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav mat-nav-list{
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
 .mat-toolbar.main {
   position: sticky;
   top: 0;
@@ -22,18 +33,17 @@
 }
 
 mat-toolbar.footer {
-    font-size: 12px;
-    font-weight: 300;
+  font-size: 12px;
+  font-weight: 300;
 }
+
+/* sidenav footer: keep inline at the end of the sidenav, not fixed */
 .footer {
-color: white;
-background: transparent;
-position: fixed;
-left: 0;
-bottom: 0;
-width: 13%;
-
-
+  color: white;
+  background: transparent;
+  position: static;
+  width: 100%;
+  padding: 8px 12px;
 }
 .active-route,
 a.mat-list-item:hover {
@@ -74,3 +84,59 @@ mat-sidenav-content {
       background: white;
      }
  }
+
+/* Footer styles */
+.site-footer {
+  /* normal flow footer that appears after page content */
+  position: static;
+  width: 100%;
+  background: #f5f5f5;
+  color: #333;
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.05);
+  margin-top: 18px;
+}
+.spacer{ flex: 1; }
+
+/* Side-nav footer links */
+.sidenav-footer-links a{
+  color: #3f51b5; /* app blue for links */
+  font-size: 13px;
+  text-decoration: underline;
+  padding: 0 6px;
+}
+
+/* Make footer links visually smaller */
+.footer-links a{
+  color: #3f51b5; /* app blue (primary) */
+  text-decoration: underline;
+  font-size: 13px;
+  opacity: 0.95;
+  margin: 0 8px;
+}
+
+.small-links .footer-links a{
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.footer-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 8px 12px;
+}
+
+.footer-links{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.copyright{
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
