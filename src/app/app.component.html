@@ -1,7 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar style="background: rgb(14, 14, 105);" >
+    <mat-toolbar style="background: white;" >
       <img src="../assets/logoNew.png" style="height: 50px;">
     </mat-toolbar>
     <mat-nav-list>
@@ -20,7 +20,7 @@
     </mat-toolbar>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar class="main" color="primary" style="background: rgb(14, 14, 105);">
+    <mat-toolbar class="main" color="primary" style="background: white;">
       <img src="../assets/logoNew.png" class="card">
 
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" style="margin-left: 60%;"
