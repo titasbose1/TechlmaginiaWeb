@@ -8,6 +8,7 @@ import { OurPoliciesComponent } from './pages/our-policies/our-policies.componen
 import { RefundCancellationComponent } from './pages/refund-cancellation/refund-cancellation.component';
 import { ListEnquiryComponent } from './pages/list-enquiry/list-enquiry.component';
 import { AuthGuard } from './guards/auth-guard';
+import { PaymentComponent } from './payment/payment.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'our-policies', component: OurPoliciesComponent },
   { path: 'refund-cancellation', component: RefundCancellationComponent },
   { path: 'listEnquiry',component: ListEnquiryComponent,canActivate: [AuthGuard],},
+  { path: 'payment/:mobileNo/:amount/:packageId', component: PaymentComponent }
 
 ];
 
