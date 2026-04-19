@@ -39,7 +39,8 @@ export class PaymentComponent implements OnInit {
     userName: '',
     mobileNo: this.mobileNo,
     order_id: '',
-    status: 'CREATED'
+    status: 'CREATED',
+    featuredPosts: 4
   },
   {
     title: '6m-basic',
@@ -55,7 +56,8 @@ export class PaymentComponent implements OnInit {
     userName: '',
     mobileNo: this.mobileNo,
     order_id: '',
-    status: 'CREATED'
+    status: 'CREATED',
+    featuredPosts: 2
   },
     {
     title: '3m-basic',
@@ -71,7 +73,8 @@ export class PaymentComponent implements OnInit {
     userName: '',
     mobileNo: this.mobileNo,
     order_id: '',
-    status: 'CREATED'
+    status: 'CREATED',
+    featuredPosts: 1
   }]
 
 

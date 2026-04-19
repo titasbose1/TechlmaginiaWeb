@@ -13,5 +13,6 @@ export class Package {
 	mobileNo!: string;
 	order_id!: any;
     status!: string;
+    featuredPosts!: number;
 }
 
