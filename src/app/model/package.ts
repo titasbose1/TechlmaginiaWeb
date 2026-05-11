@@ -14,5 +14,6 @@ export class Package {
 	order_id!: any;
     status!: string;
     featuredPosts!: number;
+    createdAt!: number;
 }
 

@@ -26,6 +26,42 @@ export class PaymentComponent implements OnInit {
 
     packages: Package[] = [
     {
+    title: '1yr-advanced',
+    description: 'Advanced package 1yr',
+    price: 1199,
+    gst: 215.82,
+    total: 1414.82,
+    posts: 'UNLIMITED',
+    validTill: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).getTime(),
+    validity: '1yr',
+    state: '',
+    country: 'India',
+    userName: '',
+    mobileNo: this.mobileNo,
+    order_id: '',
+    status: 'CREATED',
+    featuredPosts: 2,
+    createdAt: new Date().getTime()
+  },
+  {
+    title: '6m-advanced',
+    description: 'Advanced package 6m',
+    price: 799,
+    gst: 143.82,
+    total: 942.82,
+    posts: 'UNLIMITED',
+    validTill: new Date(new Date().setMonth(new Date().getMonth() + 6)).getTime(),
+    validity: '6m',
+    state: '',
+    country: 'India',
+    userName: '',
+    mobileNo: this.mobileNo,
+    order_id: '',
+    status: 'CREATED',
+    featuredPosts: 2,
+    createdAt: new Date().getTime()
+  },
+    {
     title: '1yr-basic',
     description: 'Basic package 1yr',
     price: 499,
@@ -40,7 +76,8 @@ export class PaymentComponent implements OnInit {
     mobileNo: this.mobileNo,
     order_id: '',
     status: 'CREATED',
-    featuredPosts: 4
+    featuredPosts: 1,
+    createdAt: new Date().getTime()
   },
   {
     title: '6m-basic',
@@ -48,7 +85,7 @@ export class PaymentComponent implements OnInit {
     price: 299,
     gst: 53.82,
     total: 352.82,
-    posts: 'UNLIMITED',
+    posts: '50',
     validTill: new Date(new Date().setMonth(new Date().getMonth() + 6)).getTime(),
     validity: '6m',
     state: '',
@@ -57,7 +94,8 @@ export class PaymentComponent implements OnInit {
     mobileNo: this.mobileNo,
     order_id: '',
     status: 'CREATED',
-    featuredPosts: 2
+    featuredPosts: 1,
+    createdAt: new Date().getTime()
   },
     {
     title: '3m-basic',
@@ -65,7 +103,7 @@ export class PaymentComponent implements OnInit {
     price: 199,
     gst: 35.82,
     total: 234.82,
-    posts: 'UNLIMITED',
+    posts: '20',
     validTill: new Date(new Date().setMonth(new Date().getMonth() + 3)).getTime(),
     validity: '3m',
     state: '',
@@ -74,7 +112,8 @@ export class PaymentComponent implements OnInit {
     mobileNo: this.mobileNo,
     order_id: '',
     status: 'CREATED',
-    featuredPosts: 1
+    featuredPosts: 1,
+    createdAt: new Date().getTime()
   }]
 
 
